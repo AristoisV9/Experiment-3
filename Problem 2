@@ -11,10 +11,10 @@ int main()
 	int y;
 	
 	cout<<"Enter the temparaturs of Province A, B, and C for a week and this program will display them!\n";
-	for(x=1;x<=7;x++)
+	for(y=1;y<=7;y++)
 	{
-		cout<<"Province A, Day "<< x <<": ";
-		cin>>list[x];
+		cout<<"Province A, Day "<< y <<": ";
+		cin>>list[y];
 	}
 	for(x=1;x<=7;x++)
 	{
@@ -27,9 +27,9 @@ int main()
 		cin>>listb[x];
 	}
 	cout<<"\n\n";
-	for(x=1;x<=7;x++)
+	for(y=1;y<=7;y++)
 	{
-		cout<<"Province A, Day "<< x  <<"= "<< list[x] <<"\n";
+		cout<<"Province A, Day "<< y  <<"= "<< list[y] <<"\n";
 	}
 	for(x=1;x<=7;x++)
 	{
