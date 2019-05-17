@@ -1,0 +1,46 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	char arr[50];
+	int a;
+	int b;
+	int c;
+	int temp;
+	
+	cout<<"How big do you want the array to be? ";
+	cin>>a;
+	
+	if(a<0 || a>50)
+	{
+		cout<<"Invalid Input! or maybe it was just too long or very very short";
+		return 0;
+	}
+	cout<<"\nYou can either input them one by one or just enter the whole text BUT!\n*just make sure the amount of characters won't exceed to the value you inputted awhile ago*\n\n";
+	for(b=0;b<a;b++)
+	{
+		cout<<"Enter element ["<< b+1 <<"]";
+		cin>>arr[b];
+	}
+	for(b=0;b<a;b++)
+	{		
+		for(c=b+1;c<a;c++)
+		{
+			if(arr[b]>arr[c])
+			{
+				temp  =arr[b];
+				arr[b]=arr[c];
+				arr[c]=temp;
+			}
+		}
+	}
+	
+	cout<<"\n\nElements Sorted in an Ascending Order: \n";
+	for(b=0;b<a;b++)
+		cout<<arr[b]<<" ";
+	cout<<"\n\nArray Size: "<< a;
+	return 0;
+	
+}
