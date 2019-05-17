@@ -41,6 +41,7 @@ int main()
 	for(b=0;b<a;b++)
 		cout<<arr[b]<<" ";
 	cout<<"\n\nArray Size: "<< a;
-	return 0;
 	
+	cin.ignore();
+	return 0;
 }
